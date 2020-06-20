@@ -1,0 +1,44 @@
+<div class="py-3 px-3">
+    <div class="row mx-3">
+        <div class="col-6 border">
+            <h4 class="mt-3 title">src/public/js/index.js</h4>
+            <hr>
+            <h5 class="paragraph mt-3 text-justify">
+                 En la sección anterior hablamos de que íbamos analizar el data cuyo origen está en el código de este archivo, comencemos. 
+            </h5>
+            <h5 class="paragraph mt-3 text-justify">
+                Comenzamos requiriendo el modulo para manejo de archivos de NodeJS <span class="text-primary">fileSystem (fs)</span> y un módulo 
+                que no viene instalado, sino que hay que agregarlo de forma manual <span class="text-primary">csv-parser</span>
+            </h5>
+            <h5 class="paragraph mt-3 text-justify">
+                Luego con el método <span class="text-primary">createReadStream</span> del módulo fileSystem, habilitamos una interfaz para leer los datos de un archivo o una secuencia, al que le indicamos la ruta donde este se encuentre. Luego emitimos el evento <span class="text-primary">pipe</span> en el cual iniciamos la transmisión de los datos y los analizamos con el parser <span class="text-primary">csv</span> donde indicamos el tipo separador de las columnas para el archivo. 
+            </h5>
+            <h5 class="paragraph mt-3 text-justify">
+                En el método <span class="text-primary">On</span> emitimos el evento <span class="text-primary">data</span> y por medio de una función callback recuperamos 
+                los datos que están siendo leídos y transmitidos. Luego esos mismos datos los almacenamos en un arreglo previamente declarado, agregándolos en el orden en que son llamados. 
+            </h5>
+            <h5 class="paragraph mt-3 text-justify">
+               Para finalizar la transmisión de datos, ocupamos el evento <span class="text-primary">end</span> y en el callback recuperamos un mensaje, para saber si nuestro archivo se procesó correctamente. 
+            </h5>
+            <h5 class="paragraph mt-3 text-justify">
+               Luego hacemos que los datos del arreglo sean exportables a cualquier modulo, y de esta forma es que podemos utilizar su contenido en otros archivos. 
+            </h5>
+
+            
+            
+        </div>
+        <div class="col-1"></div>
+        <div class="col-5 border">
+            <img src="/img/img8.png" alt="" class="img-fluid my-3" style="height: 750px;">
+        </div>
+    </div>
+    <div class="row mt-4">
+        <div class="col-md-10"></div>
+        <div class="col-1">
+            <a href="/tutorial/guide7" class="btn btn-primary"><i class="fas fa-backward"></i></a>
+        </div>
+        <div class="col-1">
+             <a href="/tutorial/guide9" class="btn btn-primary"><i class="fas fa-forward"></i></a>
+        </div>
+    </div>
+</div>

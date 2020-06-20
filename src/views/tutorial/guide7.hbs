@@ -1,0 +1,43 @@
+<div class="py-3 px-3">
+    <div class="row mx-3">
+        <div class="col-6 border">
+            <h4 class="mt-3 title">src/routes/index.js</h4>
+            <hr>
+            <h5 class="paragraph mt-3 text-justify">
+               El siguiente código muestra las rutas que se han creado para el archivo enrutador principal de la aplicación.
+               Cada ruta responde con una vista específica a excepción de <span class="text-primary">fecthData</span>, el cual no ocupa el método render ya que esta ruta es la que responde a la petición que hemos realizado con <span class="text-rpimary">ajax</span> de jquery.   
+            </h5>
+            <h5 class="paragraph mt-3 text-justify">
+               En la función de retorno de esta ruta, declaramos un par de variables de tipo array <span class="text-primary">(ecg_mv, ecg_elapsedtime)</span>, la primera para guardar una colección de muestras de los biopotenciales medidos y la segunda para almacenar la colección de instantes en que se tomaron las muestras. 
+            </h5>
+            <h5 class="paragraph mt-3 text-justify">
+               En la siguiente línea genero un entero aleatorio que esta entre "0" y la cantidad máxima de muestras tomadas menos 800.
+               y junto con <span class="text-primary">max</span>, conforman una ventana de datos de 800 muestras elegidas al azar.  
+            </h5>
+            <h5 class="paragraph mt-3 text-justify">
+               <span class="text-primary">data</span> es un arreglo de objetos que contiene todas las mediciones recabadas en el archivo CSV. Una vez definida una muestra más pequeña de datos, realizamos un mapeo e imponemos condición a la selección de los datos, que serán retornados a la petición en el método <span class="text-primary">send</span>.
+            </h5>
+            <h5 class="paragraph mt-3 text-justify">
+               En la condición he impuesto que solo aquellas muestras cuyo índice <span class="text-primary">i</span> actual es divisible entre el valor de "3" y que están dentro del intervalo de muestras definido por las variables <span class="text-primary"> min y max</span> sean consideradas para la colección de datos que van a construir el grafico. Modificar la divisibilidad del índice se puede interpretar de igual forma que modificar la frecuencia de muestreo, de forma que a mayor número de muestras cuyos indices sean divisible entre el término de la derecha, mejor información se tendra de la forma de la señal y su reconstrucción será más fiel, por el contrario un valor más grande en el término de la derecha equivale a una menor frecuencia de muestro que como consecuencia tendrá que la señal graficada no será fiel a su comportamiento natural.  
+            </h5>
+            <h5 class="paragraph mt-3 text-justify">
+               Ahora vamos a examinar el data, para ver cómo ha sido construido.  
+            </h5>
+            
+            
+        </div>
+        <div class="col-1"></div>
+        <div class="col-5 border">
+            <img src="/img/img7.png" alt="" class="img-fluid my-3" style="height: 750px;">
+        </div>
+    </div>
+    <div class="row mt-4">
+        <div class="col-md-10"></div>
+        <div class="col-1">
+            <a href="/tutorial/guide6" class="btn btn-primary"><i class="fas fa-backward"></i></a>
+        </div>
+        <div class="col-1">
+             <a href="/tutorial/guide8" class="btn btn-primary"><i class="fas fa-forward"></i></a>
+        </div>
+    </div>
+</div>

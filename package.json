@@ -1,0 +1,24 @@
+{
+  "name": "graficar",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "csv": "^5.3.2",
+    "csv-parser": "^2.3.3",
+    "csvtojson": "^2.0.10",
+    "express": "^4.17.1",
+    "express-handlebars": "^4.0.4"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}

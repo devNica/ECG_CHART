@@ -1,0 +1,44 @@
+<div class="py-3 px-3">
+    <div class="row mx-3">
+        <div class="col-6 border">
+            <h4 class="mt-3 title">src/public/js/chart.js</h4>
+            <hr>
+            <h5 class="paragraph mt-3 text-justify">
+                El código del archivo <span class="text-primary">chart.js</span> será analizado en dos partes.
+            </h5>
+            <h5 class="paragraph mt-3 text-justify">
+                En la primera parte del código tenemos la función <span class="text-primary">getChartData</span>, que se invoca dentro del 
+                evento <span class="text-primary">click</span> del botón con el id: <span class="text-primary">renderBtn</span>. Recordemos
+            </h5>
+            <h5 class="paragraph mt-3 text-justify">
+                Dentro de la función <span class="text-primary">getChartData</span> hacemos uso del método <span class="text-primary">ajax</span> de "jquery", este método nos permite realizar peticiones HTTP de forma asíncrona a menos que se especifique lo contrario en el objeto de configuración. 
+            </h5>
+            <h5 class="paragraph mt-3 text-justify">
+                Lo primero que hacemos es especificar la URL que va consultar <span class="text-primary">http://localhost:4200/fetchData</span> y luego en la función de éxito (la cual se invoca solo cuando la solicitud ha tenido éxito al procesarse) <span class="text-primary">success</span> recuperamos la respuesta del servidor por medio de una función callback.
+            </h5>
+            <h5 class="paragraph mt-3 text-justify">
+                Dentro de la función de retorno podemos acceder fácilmente a los resultados de la petición. Estos datos los vamos a separar en las variables <span class="text-primary">labels y data</span>. La variable <span class="text-primary">labels</span> tiene los datos de los instantes exactos de tiempo en que se midió un biopotencial y su dominio es todo el eje horizontal. En el caso de la variable <span class="text-primary">data</span> contiene la magnitud de los Biopotenciales para instantes precisos de tiempo y su dominio es todo el eje vertical. 
+            </h5>
+            <h5 class="paragraph mt-3 text-justify">
+                Luego estos resultados se pasan a la función <span class="text-primary">renderChart</span>, la cual se explica en el siguiente apartado. 
+            </h5>
+            <h5 class="paragraph mt-3 text-justify">
+                Para ser notificados de algún error con el proceso de la petición, utilizamos una función callback que nos retorna el error ocurrido. 
+            </h5>
+            
+        </div>
+        <div class="col-1"></div>
+        <div class="col-5 border">
+            <img src="/img/img5.png" alt="" class="img-fluid my-3" style="height: 750px;">
+        </div>
+    </div>
+    <div class="row mt-4">
+        <div class="col-md-10"></div>
+        <div class="col-1">
+            <a href="/tutorial/guide4" class="btn btn-primary"><i class="fas fa-backward"></i></a>
+        </div>
+        <div class="col-1">
+             <a href="/tutorial/guide6" class="btn btn-primary"><i class="fas fa-forward"></i></a>
+        </div>
+    </div>
+</div>

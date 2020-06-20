@@ -1,0 +1,43 @@
+<div class="py-3 px-3">
+    <div class="row mx-3">
+        <div class="col-6 border">
+            <h4 class="mt-3 title">src/public/js/chart.js</h4>
+            <hr>
+            <h5 class="paragraph mt-3 text-justify">
+                En esta segunda parte vamos analizar la función <span class="text-primary">renderChart</span>. 
+            </h5>
+            <h5 class="paragraph mt-3 text-justify">
+                Esta función recibe dos parámetros <span class="text-primary">data y labels</span> de los cuales ya hemos hablado sobre su naturaleza y contenido. En el contexto de esta función son necesarios para construir el grafico de un electrocardiograma usando la libreria <span class="text-primary">ChartJS</span> 
+            </h5>
+            <h5 class="paragraph mt-3 text-justify">
+                Dentro de las declaraciones tenemos la constante <span class="text-primary">ctx</span> que esta apuntando al lienzo donde vamos a dibujar nuestros datos y donde también especificamos el contexto dando lugar a la creación de un objeto <span class="text-primary">2d</span>, es decir que vamos a representar un contexto de dos dimensiones asociados al lienzo.
+            </h5>
+            <h5 class="paragraph mt-3 text-justify">
+                Luego sobrescribimos a la variable <span class="text-primary">ecgChart</span> con un objeto "Chart" totalmente nuevo para cada vez que se llame a esta función. Al objeto le pasamos el contexto, y un objeto de configuración que modera la apariencia y comportamiento que tendrán los datos al ser graficados.
+            </h5>
+            <h5 class="paragraph mt-3 text-justify">
+                Dentro del objeto de configuración, especificamos el tipo de gráfico con el atributo "type". En el atributo "data" pasamos los datos que hemos procesado donde las etiquetas para el eje Horizontal vienen dentro de la variable "labels". En el objeto "datasets" definimos el título del gráfico con el atributo "label" y los valores para el eje Vertical se pasan en la variable "data".
+            </h5>
+            <h5 class="paragraph mt-3 text-justify">
+                Para la apariencia hemos definido que el area bajo la curva sea transparente y sin relleno con el atributo "backgroundColor" y "fill" respectivamente. El atributo "lineTension" modera la suavidad de la curva, mientras mas alto su valor, mas suave sera la línea que une un par de valores. Para que la curva tenga ese color salmón modificamos el atributo "borderColor" y para controlar el grueso de la linea utilizamos el atributo "borderWidth".
+            </h5>
+            <h5 class="paragraph mt-3 text-justify">
+                En el objeto "options" especificamos que el comportamiento del grafico será responsivo, es decir que se va adaptar al tamaño de su contendor y ventana. También deshabilitamos la opción de que mantengan la relación de aspecto entre valores del eje Horizontal y Vertical, en caso contrario los datos serán equiespaciados y se perderá la morfología de la curva.
+            </h5>
+            
+        </div>
+        <div class="col-1"></div>
+        <div class="col-5 border">
+            <img src="/img/img6.png" alt="" class="img-fluid my-3" style="height: 750px;">
+        </div>
+    </div>
+    <div class="row mt-4">
+        <div class="col-md-10"></div>
+        <div class="col-1">
+            <a href="/tutorial/guide5" class="btn btn-primary"><i class="fas fa-backward"></i></a>
+        </div>
+        <div class="col-1">
+             <a href="/tutorial/guide7" class="btn btn-primary"><i class="fas fa-forward"></i></a>
+        </div>
+    </div>
+</div>

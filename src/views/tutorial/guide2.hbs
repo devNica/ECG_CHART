@@ -1,0 +1,45 @@
+<div class="py-3 px-3">
+    <div class="row mx-3">
+        <div class="col-6 border">
+            <h4 class="mt-3 title">src/index.js</h4>
+            <hr>
+            <h5 class="paragraph mt-3 text-justify">
+                En las primeras cuatro líneas de código, estamos importando los módulos necesarios para la creación y configuración de un 
+                servidor muy básico de Express, también el módulo de handlebars con el que vamos a reemplazar el motor de plantillas que viene por defecto y cors que nos permitirá trabajar sin problemas con las peticiones get, que en algunas ocasiones suelen mandar 
+                mensajes de error por el intercambio de recursos de origen cruzado. 
+                
+            </h5>
+            <h5 class="paragraph mt-3 text-justify">
+                A continuación, creamos una instancia de "Express" para acceder a todos sus métodos, también definimos el puerto en el que se va realizar el deploy en desarrollo de la aplicación.
+            </h5>
+            <h5 class="paragraph mt-3 text-justify">
+                Las siguientes cuatro líneas de código, se encargarán de establecer la configuración para el motor de plantillas que va reemplazar al que por defecto viene con express, indicándole el nombre del archivo principal que será el encargado de definir el esqueleto HTML de la aplicación y el nombre de extensión del archivo. También configuramos el motor de vistas indicándole la extensión de archivo que corresponde a las mismas y no menos importante le indicamos a express la ruta donde debe ir a buscar las vistas del proyecto cada vez que se solicite renderizar una de estas. Lo mismo hacemos para los archivos estáticos los cuales el programa tendra que ir a buscarlos al directorio public  
+            </h5>
+
+            <h5 class="paragraph mt-3 text-justify">
+                Luego especificamos el uso de los middlewares "cors" y "express", para luego pasar a la importación de nuestros archivos de rutas. En cada uno de estos enrutadores podemos definir un prefijo que servirá para todas las rutas del enrutador correspondiente.
+            </h5>
+
+            <h5 class="paragraph mt-3 text-justify">
+               Por ultimo le decimos a express que inicie el servicio y que escuche todas las peticiones en el puerto indicado
+               en el primer parámetro del método "listen", el segundo parámetro es una función "callback" en la que podemos 
+               imprimir un mensaje por consola para testear el correcto funcionamiento de nuestro servidor. 
+
+            </h5>
+
+        </div>
+        <div class="col-1"></div>
+        <div class="col-5 border">
+            <img src="/img/img2.png" alt="" class="img-fluid my-3" style="height: 750px;">
+        </div>
+    </div>
+    <div class="row mt-4">
+        <div class="col-md-10"></div>
+        <div class="col-1">
+            <a href="/tutorial/guide1" class="btn btn-primary"><i class="fas fa-backward"></i></a>
+        </div>
+        <div class="col-1">
+             <a href="/tutorial/guide3" class="btn btn-primary"><i class="fas fa-forward"></i></a>
+        </div>
+    </div>
+</div>

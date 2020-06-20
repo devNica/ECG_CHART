@@ -1,0 +1,35 @@
+<div class="py-3 px-3">
+    <div class="row mx-3">
+        <div class="col-6 border">
+            <h4 class="mt-3 title">src/views/templates/grafica.hbs</h4>
+            <hr>
+            <h5 class="paragraph mt-3 text-justify">
+                En la imagen se muestra el código HTML del archivo donde vamos a crear el lienzo 
+                para graficar nuestros datos.
+            </h5>
+            <h5 class="paragraph mt-3 text-justify">
+                Acá lo importante es que para poder visualizar la gráfica, ocupamos de un elemento <span class="text-primary">canvas</span>
+                al que le especificamos las dimensiones que va tener y un identificador 
+            </h5>
+            <h5 class="paragraph mt-3 text-justify">
+                Tambien vamos a necesitar interactuar con algun elemento de la web para generar un evento que llame al render del gráfico. He dispuesto de un botón al que se le ha dado un identificador propio <span class="text-primary">(renderBtn)</span> que a través de su metodo click invocará a la función de renderizacion.
+            </h5>
+            <h5 class="paragraph mt-3 text-justify">
+                Por último es importante agregar el acceso al archivo de javascript <span class="text-primary">chart.js</span> donde se construye nuestro gráfico con los datos y donde especificamos una lista de opciones para que tenga cierta apariencia y comportamiento. Es aca donde vamos a reconocer el evento click del botón anteriormente mencionado.   
+            </h5>
+        </div>
+        <div class="col-1"></div>
+        <div class="col-5 border">
+            <img src="/img/img4.png" alt="" class="img-fluid my-3" style="height: 750px;">
+        </div>
+    </div>
+    <div class="row mt-4">
+        <div class="col-md-10"></div>
+        <div class="col-1">
+            <a href="/tutorial/guide3" class="btn btn-primary"><i class="fas fa-backward"></i></a>
+        </div>
+        <div class="col-1">
+             <a href="/tutorial/guide5" class="btn btn-primary"><i class="fas fa-forward"></i></a>
+        </div>
+    </div>
+</div>

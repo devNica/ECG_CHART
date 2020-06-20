@@ -1,0 +1,46 @@
+<div class="py-3 px-3">
+    <div class="row mx-3">
+        <div class="col-6 border">
+            <h4 class="mt-3 title">src/views/layouts/base.hbs</h4>
+            <hr>
+            <h5 class="paragraph mt-3 text-justify">
+                En la imagen se muestra el código HTML del archivo base, que sirve de entrada para todas las vistas.
+            </h5>
+            <h5 class="paragraph mt-3 text-justify">
+                En el bloque "head" se han declarado las CDN´s de boostrap, Google-Fonts, Font-Awesome y por su puesto 
+                la CDN de ChartJS
+            </h5>
+            <h5 class="paragraph mt-3 text-justify text-primary">
+                https://cdn.jsdelivr.net/npm/chart.js@2.8.0
+            </h5>
+            <h5 class="paragraph mt-3 text-justify">
+                En el bloque del cuerpo nos encontramos con las clásicas etiquetas de <span class="text-primary">handlebars</span>, 
+                las cuales ya he explicado en otros videos de este canal, pero les haré un resumen. En la primera de ellas, nos encontramos indicándole al motor de plantillas
+                que busque en el directorio partials un archivo nombrado header el cual va renderizar de forma estática para todas las rutas. Antes de caer a la siguiente 
+                etiqueta nos encontramos con el script de <span class="text-primary">jquery@3.3.1</span>, el cual cargamos antes de que se carguen las vistas dinámicas que 
+                se van a renderizar apartir de la posición de la etiqueta "body" de handlebars.  
+            </h5>
+            <h5 class="paragraph mt-3 text-justify">
+                La razón por la cual cargamos a <span class="text-primary">jquery</span> es técnicamente funcional, ya que de no hacerlo de este modo jquery no va reconocer 
+                el selector con el que se invoca la función render para mostrar el grafico.
+            </h5>
+            <h5 class="paragraph mt-3 text-justify">
+                No creí que hiciese falta especificar que el header es una plantilla donde tenemos creada nuestra barra de navegación principal, de todas formas, si no te queda clara esta explicación, puedes revisar en los archivos del repositorio y te encontraras con el código. 
+            </h5>
+
+        </div>
+        <div class="col-1"></div>
+        <div class="col-5 border">
+            <img src="/img/img3.png" alt="" class="img-fluid my-3" style="height: 750px;">
+        </div>
+    </div>
+    <div class="row mt-4">
+        <div class="col-md-10"></div>
+        <div class="col-1">
+            <a href="/tutorial/guide2" class="btn btn-primary"><i class="fas fa-backward"></i></a>
+        </div>
+        <div class="col-1">
+             <a href="/tutorial/guide4" class="btn btn-primary"><i class="fas fa-forward"></i></a>
+        </div>
+    </div>
+</div>
